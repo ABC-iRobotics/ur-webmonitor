@@ -1,0 +1,11 @@
+{
+  "name": "ur-webmonitor",
+  "version": "0.0.1",
+  "description": "Monitoring an Universal Robot data via a browser",
+  "main": "index.js",
+  "author": "BARK",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

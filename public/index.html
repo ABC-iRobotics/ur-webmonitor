@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UR-State</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f8f8;
+    }
+    p {
+      font-size: 17px;
+      font-weight: bold;
+      padding-top: 30px;
+      padding-bottom: 5px;    
+    }
+    .coord {
+      color: #428bca;
+      font-size: 17px;
+      padding-top: 2px;
+      padding-bottom: 0;
+      font-family: 'Oswald', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center well">
+
+    <div class="row">
+      <div class="col-xs-12"><p>ROBOT STATE</p></div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xs-4"><label>Robot Mode</label><div class="robotMode coord well">load...</div></div>
+      <div class="col-xs-4"><label>Safety Mode</label><div class="safetyMode coord well">load...</div></div>
+      <div class="col-xs-4"><label>Prog. State</label><div class="progState coord well">load...</div></div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xs-4"><label>Main [V]</label><div class="mainV coord well">load...</div></div>
+      <div class="col-xs-4"><label>Robot [V]</label><div class="robotV coord well">load...</div></div>
+      <div class="col-xs-4"><label>Robot [A]</label><div class="robotI coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Digital Inputs</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><label>0</label><div class="digInput0 coord well">load...</div></div>
+      <div class="col-xs-3"><label>1</label><div class="digInput1 coord well">load...</div></div>
+      <div class="col-xs-3"><label>2</label><div class="digInput2 coord well">load...</div></div>
+      <div class="col-xs-3"><label>3</label><div class="digInput3 coord well">load...</div></div>
+    </div>
+    <div class="row">         
+      <div class="col-xs-3"><label>4</label><div class="digInput4 coord well">load...</div></div>
+      <div class="col-xs-3"><label>5</label><div class="digInput5 coord well">load...</div></div>
+      <div class="col-xs-3"><label>6</label><div class="digInput6 coord well">load...</div></div>
+      <div class="col-xs-3"><label>7</label><div class="digInput7 coord well">load...</div></div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xs-12"><p>Digital Outputs</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><label>0</label><div class="digOutput0 coord well">load...</div></div>
+      <div class="col-xs-3"><label>1</label><div class="digOutput1 coord well">load...</div></div>
+      <div class="col-xs-3"><label>2</label><div class="digOutput2 coord well">load...</div></div>
+      <div class="col-xs-3"><label>3</label><div class="digOutput3 coord well">load...</div></div>
+    </div>
+    <div class="row">            
+      <div class="col-xs-3"><label>4</label><div class="digOutput4 coord well">load...</div></div>
+      <div class="col-xs-3"><label>5</label><div class="digOutput5 coord well">load...</div></div>
+      <div class="col-xs-3"><label>6</label><div class="digOutput6 coord well">load...</div></div>
+      <div class="col-xs-3"><label>7</label><div class="digOutput7 coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Actual joint position [&#176;]</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>J1</label><div class="actJ1pos coord well">load...</div></div>
+      <div class="col-xs-4"><label>J2</label><div class="actJ2pos coord well">load...</div></div>
+      <div class="col-xs-4"><label>J3</label><div class="actJ3pos coord well">load...</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"><label>J4</label><div class="actJ4pos coord well">load...</div></div>
+      <div class="col-xs-4"><label>J5</label><div class="actJ5pos coord well">load...</div></div>
+      <div class="col-xs-4"><label>J6</label><div class="actJ6pos coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Actual Cartesian coordinate of the tool</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>X [mm]</label><div class="actXXpos coord well">load...</div></div>
+      <div class="col-xs-4"><label>Y [mm]</label><div class="actYYpos coord well">load...</div></div>
+      <div class="col-xs-4"><label>Z [mm]</label><div class="actZZpos coord well">load...</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"><label>RX</label><div class="actRXpos coord well">load...</div></div>
+      <div class="col-xs-4"><label>RY</label><div class="actRYpos coord well">load...</div></div>
+      <div class="col-xs-4"><label>RZ</label><div class="actRZpos coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Actual joint current [A]</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>J1</label><div class="actJ1cur coord well">load...</div></div>
+      <div class="col-xs-4"><label>J2</label><div class="actJ2cur coord well">load...</div></div>
+      <div class="col-xs-4"><label>J3</label><div class="actJ3cur coord well">load...</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"><label>J4</label><div class="actJ4cur coord well">load...</div></div>
+      <div class="col-xs-4"><label>J5</label><div class="actJ5cur coord well">load...</div></div>
+      <div class="col-xs-4"><label>J6</label><div class="actJ6cur coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Actual joint voltage [V]</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>J1</label><div class="actJ1V coord well">load...</div></div>
+      <div class="col-xs-4"><label>J2</label><div class="actJ2V coord well">load...</div></div>
+      <div class="col-xs-4"><label>J3</label><div class="actJ3V coord well">load...</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"><label>J4</label><div class="actJ4V coord well">load...</div></div>
+      <div class="col-xs-4"><label>J5</label><div class="actJ5V coord well">load...</div></div>
+      <div class="col-xs-4"><label>J6</label><div class="actJ6V coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12"><p>Temperature of the joints in degree celsius [&#176;C]</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>J1</label><div class="actJ1cel coord well">load...</div></div>
+      <div class="col-xs-4"><label>J2</label><div class="actJ2cel coord well">load...</div></div>
+      <div class="col-xs-4"><label>J3</label><div class="actJ3cel coord well">load...</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"><label>J4</label><div class="actJ4cel coord well">load...</div></div>
+      <div class="col-xs-4"><label>J5</label><div class="actJ5cel coord well">load...</div></div>
+      <div class="col-xs-4"><label>J6</label><div class="actJ6cel coord well">load...</div></div>
+    </div>
+
+  </div>
+
+  <script>
+    $(document).ready(function getURState () {
+      $.get("/state", function(data) {
+        $('.actJ1pos').html(Math.round((data.actJ1pos * (180 / Math.PI)) * 100) / 100)
+        $('.actJ2pos').html(Math.round((data.actJ2pos * (180 / Math.PI)) * 100) / 100)
+        $('.actJ3pos').html(Math.round((data.actJ3pos * (180 / Math.PI)) * 100) / 100)
+        $('.actJ4pos').html(Math.round((data.actJ4pos * (180 / Math.PI)) * 100) / 100)
+        $('.actJ5pos').html(Math.round((data.actJ5pos * (180 / Math.PI)) * 100) / 100)
+        $('.actJ6pos').html(Math.round((data.actJ6pos * (180 / Math.PI)) * 100) / 100)
+        $('.actXXpos').html(Math.round((data.actXXpos * 100000)) / 100)
+        $('.actYYpos').html(Math.round((data.actYYpos * 100000)) / 100)
+        $('.actZZpos').html(Math.round((data.actZZpos * 100000)) / 100)
+        $('.actRXpos').html(Math.round((data.actRXpos * 10000)) / 10000)
+        $('.actRYpos').html(Math.round((data.actRYpos * 10000)) / 10000)
+        $('.actRZpos').html(Math.round((data.actRZpos * 10000)) / 10000)
+        $('.actJ1cur').html(Math.round(data.actJ1cur * 100) / 100)
+        $('.actJ2cur').html(Math.round(data.actJ2cur * 100) / 100)
+        $('.actJ3cur').html(Math.round(data.actJ3cur * 100) / 100)
+        $('.actJ4cur').html(Math.round(data.actJ4cur * 100) / 100)
+        $('.actJ5cur').html(Math.round(data.actJ5cur * 100) / 100)
+        $('.actJ6cur').html(Math.round(data.actJ6cur * 100) / 100)
+        $('.actJ1V').html(Math.round(data.actJ1V * 100) / 100)
+        $('.actJ2V').html(Math.round(data.actJ2V * 100) / 100)
+        $('.actJ3V').html(Math.round(data.actJ3V * 100) / 100)
+        $('.actJ4V').html(Math.round(data.actJ4V * 100) / 100)
+        $('.actJ5V').html(Math.round(data.actJ5V * 100) / 100)
+        $('.actJ6V').html(Math.round(data.actJ6V * 100) / 100)
+        $('.actJ1cel').html(Math.round(data.actJ1cel * 100) / 100)
+        $('.actJ2cel').html(Math.round(data.actJ2cel * 100) / 100)
+        $('.actJ3cel').html(Math.round(data.actJ3cel * 100) / 100)
+        $('.actJ4cel').html(Math.round(data.actJ4cel * 100) / 100)
+        $('.actJ5cel').html(Math.round(data.actJ5cel * 100) / 100)
+        $('.actJ6cel').html(Math.round(data.actJ6cel * 100) / 100)
+        $('.robotMode').html(data.robotMode)
+        $('.safetyMode').html(data.safetyMode)
+        $('.progState').html(data.progState)
+        $('.mainV').html(Math.round(data.mainV * 100) / 100)
+        $('.robotV').html(Math.round(data.robotV * 100) / 100)
+        $('.robotI').html(Math.round(data.robotI * 100) / 100)
+        var digIOMask0 = 1
+        var digIOMask1 = 2
+        var digIOMask2 = 4
+        var digIOMask3 = 8
+        var digIOMask4 = 16
+        var digIOMask5 = 32
+        var digIOMask6 = 64
+        var digIOMask7 = 128
+        var digOutput0 = (data.digOutput & digIOMask0) ? $('.digOutput0').html('1') : $('.digOutput0').html('0')
+        var digOutput1 = (data.digOutput & digIOMask1) ? $('.digOutput1').html('1') : $('.digOutput1').html('0')
+        var digOutput2 = (data.digOutput & digIOMask2) ? $('.digOutput2').html('1') : $('.digOutput2').html('0')
+        var digOutput3 = (data.digOutput & digIOMask3) ? $('.digOutput3').html('1') : $('.digOutput3').html('0')
+        var digOutput4 = (data.digOutput & digIOMask4) ? $('.digOutput4').html('1') : $('.digOutput4').html('0')
+        var digOutput5 = (data.digOutput & digIOMask5) ? $('.digOutput5').html('1') : $('.digOutput5').html('0')
+        var digOutput6 = (data.digOutput & digIOMask6) ? $('.digOutput6').html('1') : $('.digOutput6').html('0')
+        var digOutput7 = (data.digOutput & digIOMask7) ? $('.digOutput7').html('1') : $('.digOutput7').html('0')
+        var digInput0 = (data.digInput & digIOMask0) ? $('.digInput0').html('1') : $('.digInput0').html('0')
+        var digInput1 = (data.digInput & digIOMask1) ? $('.digInput1').html('1') : $('.digInput1').html('0')
+        var digInput2 = (data.digInput & digIOMask2) ? $('.digInput2').html('1') : $('.digInput2').html('0')
+        var digInput3 = (data.digInput & digIOMask3) ? $('.digInput3').html('1') : $('.digInput3').html('0')
+        var digInput4 = (data.digInput & digIOMask4) ? $('.digInput4').html('1') : $('.digInput4').html('0')
+        var digInput5 = (data.digInput & digIOMask5) ? $('.digInput5').html('1') : $('.digInput5').html('0')
+        var digInput6 = (data.digInput & digIOMask6) ? $('.digInput6').html('1') : $('.digInput6').html('0')
+        var digInput7 = (data.digInput & digIOMask7) ? $('.digInput7').html('1') : $('.digInput7').html('0')
+      })
+      setTimeout(getURState, 100)
+    })
+  </script>
+
+</body>
+</html>
