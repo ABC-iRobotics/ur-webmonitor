@@ -11,7 +11,7 @@ THE SOFTWARE IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY 
 1. [Requirements](#requirements)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Example usage](#example-usage)
+4. [Usage](#example-usage)
 5. [Bugs, feature requests, etc](#bugs-feature-requests-etc)
 
 ## Requirements
@@ -22,8 +22,8 @@ Clone the repository.
 Clone the https://github.com/ABC-iRobotics/ur-state-receiver.git
 
 ## Configuration
-Set the cloned ur-state-receiver path in the line: 'const URStateData = require(\'../ur-state-receiver\')'
-Set your Universal Robot's IP: 'const urStateDataInst = new URStateData(30003, \'your_robot_ip\')'
+1. Set the cloned ur-state-receiver path in the line: 'const URStateData = require('path_the_cloned_ur-state-receiver')'
+2. Set your Universal Robot's IP: 'const urStateDataInst = new URStateData(30003, 'your_robot_ip')'
 
 ## Usage
 1. Run 'node index.js' in the cloned repository folder
