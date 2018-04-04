@@ -29,6 +29,9 @@ Clone the https://github.com/ABC-iRobotics/ur-state-receiver.git
 1. Run 'node index.js' in the cloned repository folder
 2. Open a browser and type http://localhost
 
+## Acknowledgement
+We acknowledge the financial support of this work by the Hungarian State and the European Union under the  EFOP-3.6.1-16-2016-00010 project.
+
 ## Bugs, feature requests, etc
 Please use the [GitHub issue tracker][].
 
