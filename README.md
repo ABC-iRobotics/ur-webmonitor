@@ -18,8 +18,9 @@ THE SOFTWARE IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY 
 Install Node.js.
 
 ## Installation
-Clone the repository.
-Clone the https://github.com/ABC-iRobotics/ur-state-receiver.git
+- Clone the repository.
+- Clone the https://github.com/ABC-iRobotics/ur-state-receiver.git
+- Run npm -i in the cloned reposítories folders
 
 ## Configuration
 1. Set the cloned ur-state-receiver path in the line: 'const URStateData = require('path_the_cloned_ur-state-receiver')'
