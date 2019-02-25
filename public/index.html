@@ -155,6 +155,18 @@
       <div class="col-xs-4"><label>J6</label><div class="actJ6cel coord well">load...</div></div>
     </div>
 
+    <div class="row">
+      <div class="col-xs-4"><label>Elbow Position X</label><div class="elbowPositionX coord well">load...</div></div>
+      <div class="col-xs-4"><label>Elbow Position Y</label><div class="elbowPositionY coord well">load...</div></div>
+      <div class="col-xs-4"><label>Elbow Position Z</label><div class="elbowPositionZ coord well">load...</div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4"><label>Elbow Velocity X</label><div class="elbowVelocityX coord well">load...</div></div>
+      <div class="col-xs-4"><label>Elbow Velocity Y</label><div class="elbowVelocityY coord well">load...</div></div>
+      <div class="col-xs-4"><label>Elbow Velocity Z</label><div class="elbowVelocityZ coord well">load...</div></div>
+    </div>
+
   </div>
 
   <script>
@@ -196,6 +208,12 @@
         $('.mainV').html(Math.round(data.mainV * 100) / 100)
         $('.robotV').html(Math.round(data.robotV * 100) / 100)
         $('.robotI').html(Math.round(data.robotI * 100) / 100)
+        $('.elbowPositionX').html(Math.round(data.elbowPositionX * 100) / 100)
+        $('.elbowPositionY').html(Math.round(data.elbowPositionY * 100) / 100)
+        $('.elbowPositionZ').html(Math.round(data.elbowPositionZ * 100) / 100)
+        $('.elbowVelocityX').html(Math.round(data.elbowVelocityX * 100) / 100)
+        $('.elbowVelocityY').html(Math.round(data.elbowVelocityY * 100) / 100)
+        $('.elbowVelocityZ').html(Math.round(data.elbowVelocityZ * 100) / 100)
         var digIOMask0 = 1
         var digIOMask1 = 2
         var digIOMask2 = 4
