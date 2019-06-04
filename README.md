@@ -20,7 +20,7 @@ Install Node.js.
 ## Installation
 - Clone the repository.
 - Clone the https://github.com/ABC-iRobotics/ur-state-receiver.git
-- Run npm -i in the cloned reposítories folders
+- Run npm -i in the cloned repositories folders
 
 ## Configuration
 1. Set the cloned ur-state-receiver path in the line: 'const URStateData = require('path_the_cloned_ur-state-receiver')'
